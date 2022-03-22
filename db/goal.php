@@ -6,7 +6,7 @@ if (isset ($_POST['title'])){
 
         if($goal!=''){
              $today = date('Y-m-d');
-            $query = "INSERT INTO goal(title,descriptions) VALUES('$title','$descriptions')";
+            $query = "INSERT INTO goal(title,descriptions) VALUES('$goal','$descriptions')";
                  if(mysqli_query($conn,$query)){
             $msg ="Successfully Inserted";
                 }else{

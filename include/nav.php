@@ -23,12 +23,15 @@
             <li><a class="dropdown-item" href="#">Action</a></li>
             <!-- <button type="button" class="btn btn-danger" href="db/logout.php" >Logout</button> -->
           </ul>
-
+          <li class="nav-item">
+          
+          <button class="btn btn-danger" type="submit">Logout</button>
+        </li>
         </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button>
+        <button class="btn btn-danger" type="submit">Search</button>
       </form>
     </div>
   </div>
