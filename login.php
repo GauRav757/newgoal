@@ -24,7 +24,7 @@
                     </div>
                     <hr/>
                       Create account? <a href="signup.php">Sign Up</a>
-                    <input type="submit" value="Login" name="loginsubmit" style="float:right;" class="btn btn-dark">
+                    <input type="submit" value="Login" name="loginsubmit" style="float:right;" class="btn btn-danger">
                 </form>
                 </div>
                
