@@ -25,7 +25,7 @@ $goalQuery = "SELECT * FROM goal";
              <div class="row justify-content-md-center">
                <div class="col-8">
                   <br>  
-                   <form method="POST" action="db/goal.php">
+                   <form method="POST" action="db/update.php">
                     <label>Goal Title</label>
                     <div class="input-group">
                         <input type="text" class="form-control" name="title">
@@ -34,53 +34,23 @@ $goalQuery = "SELECT * FROM goal";
                       <label>Description</label>
                     <div class="input-group">
                     <textarea id="news" placeholder="Type some texts..." type="text" class="form-control"
-                            name="descriptions"></textarea>      
+                            name="description"></textarea>      
                   </div>
+                  <input name="uid" type="hidden" value="<?php echo $row['id'] ?>">
                     <br/>
-                    <button type="submit" class="btn btn-dark">Save</button>
+                    <button name="home" type="submit" class="btn btn-dark">Save</button>
                 </form>
                <?php include('include/message.php'); ?>
 
         <div class="row justify-content-md-center"></div>
+       
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.tiny.cloud/1/chbsy7ou5qr0st3ayjfs672rs9b5cx9wv9s8tse49k0kbo42/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
     
- <?php
-          if(mysqli_num_rows($goalResult)==0){
-            echo "<h3>No Goals found</h3>";
-           }else{ ?>
-
-           <table class="table">
-             <thead>
-               <th>Goal Title</th>
-               <th>Action</th>
-           </thead>
-           <tbody>
-             <?php while($row=mysqli_fetch_assoc($goalResult)) { ?>         
-           <tr>   
-             <td><?php echo $row['title'];?></td>
-             <td> <a href="db/delete-goal.php?id=<?php echo $row['id']; ?>">
-             <i class="fas fa-trash" style="color:red;"></i> 
-            </a>| <a href="update.php?id=<?php echo $row['id'];?>">
-            <i class="fas fa-edit"></i></a></td>
-           </tr>
-           <i class="fa-solid fa-trash-can"></i>
-           <?php } ?>
-             </tbody>
-             </table>
-            
-          <?php }
-          ?>
-      </div>
-    </div>
-  </div>
-  
-        
-    <script src="https://kit.fontawesome.com/998a7629ba.js" crossorigin="anonymous"></script>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-
-    <script>
 var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 
 tinymce.init({
     selector: '#news',
