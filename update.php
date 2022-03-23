@@ -34,7 +34,7 @@ $goalQuery = "SELECT * FROM goal";
                       <label>Description</label>
                     <div class="input-group">
                     <textarea id="news" placeholder="Type some texts..." type="text" class="form-control"
-                            name="description"></textarea>      
+                            name="descriptions"></textarea>      
                   </div>
                   <input name="uid" type="hidden" value="<?php echo $row['id'] ?>">
                     <br/>
@@ -145,6 +145,7 @@ tinymce.init({
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
 });
 </script>
+
 
   </body>
 </html>

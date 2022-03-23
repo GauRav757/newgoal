@@ -59,7 +59,7 @@ $goalQuery = "SELECT * FROM goal";
              <td><?php echo $row['title'];?></td>
              <td> <a href="db/delete-goal.php?id=<?php echo $row['id']; ?>">
              <i class="fas fa-trash" style="color:red;"></i> 
-            </a>| <a href="update.php?id=<?php echo $row['id'];?>">
+            </a>| <a href="edit-goal.php?id=<?php echo $row['id'];?>">
             <i class="fas fa-edit"></i></a></td>
            </tr>
            <i class="fa-solid fa-trash-can"></i>

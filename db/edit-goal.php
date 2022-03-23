@@ -3,11 +3,11 @@ if(!isset($_POST['title'])){
     die("can not edit the recored");
 }
 {
-    $goal =$_POST['title'];
-    $descriptions =$_POST['descriptions'];
+    $g =$_POST['title'];
+    $d =$_POST['descriptions'];
     $id=$_POST['id'];
     include('connect.php');
-    $query ="UPDATE goal SET title ='$goal', descriptions ='$descriptions' WHERE id='$id'";
+    $query ="UPDATE goal SET title ='$g', descriptions ='$d' WHERE id='$id'";
     if(mysqli_query($conn,$query)){
         header('location:../home.php?msg=successfully updated');
     }else{
