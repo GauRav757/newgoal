@@ -67,20 +67,20 @@ else{
            }else{ ?>
 
            <table class="table">
-             <thead>
-               <!-- <th>Goal Title</th>
-               <th>Action</th> -->
-           </thead>
+             <!-- <thead>
+               <th>Goal Title</th>
+               <th>Action</th>
+           </thead> -->
            <tbody>
              <?php while($row=mysqli_fetch_assoc($goalResult)) { ?>         
-           <tr>   
+           <!-- <tr>   
              <td><?php echo $row['title'];?></td>
              <td> <a href="db/delete-goal.php?id=<?php echo $row['id']; ?>">
-             <i class="fas fa-trash" style="color:red;"></i> 
-            </a>| <a href="edit-goal.php?id=<?php echo $row['id'];?>">
-            <i class="fas fa-edit"></i></a></td>
+              <i class="fas fa-trash" style="color:red;"></i>  -->
+            </a> <a href="edit-goal.php?id=<?php echo $row['id'];?>">
+            <!-- <i class="fas fa-edit"></i></a></td> -->
            </tr>
-           <i class="fa-solid fa-trash-can"></i>
+           <!-- <i class="fa-solid fa-trash-can"></i> -->
            <?php } ?>
              </tbody>
              </table>
