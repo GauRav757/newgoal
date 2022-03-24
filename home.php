@@ -21,8 +21,8 @@ $goalQuery = "SELECT * FROM goal";
       <body>
         <style>
           body{
-            /* background:url('img/hi.jpg'); */
-            background-position:center;
+            /* background:url('img/hii.jpeg');  */
+            background-position:;
             background-size:cover;
             background-repeat:no-repeat;
             
