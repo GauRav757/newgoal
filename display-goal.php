@@ -76,7 +76,7 @@ $goalQuery = "SELECT * FROM goal WHERE user_id='$id'";
 <script src="js/bootbox.min.js"></script>
 
  
-  }
+  
 </script>
   </body>
 </html>
