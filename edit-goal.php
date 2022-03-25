@@ -49,7 +49,7 @@ $goalResult = mysqli_query($conn,$goalQuery);
                   <p style="font-size:1.5rem;">Set Goal</p>
                    <form method="POST" action="db/edit-goal.php">
                       
-                    <label >Goal Title</label>
+                    <label >Goal Title</label>  
                     <div class="input-group">
                         <input type="text"  class="form-control" value="<?php echo $row['title'];?>" name="goal_title">
                     </div> <br>

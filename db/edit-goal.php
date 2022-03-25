@@ -4,7 +4,7 @@
     $a =$_POST['goal_accomplish_date'];
    $d =$_POST['goal_descriptions'];
    $s =$_POST['goal_status'];
-    $idd= $_POST['id'];
+    $id= $_POST['id'];
  
     if($g==''){
     $msg= "name is required";

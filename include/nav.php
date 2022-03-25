@@ -20,12 +20,12 @@
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="display-goal.php">Action</a></li>
             <!-- <button type="button" class="btn btn-danger" href="db/logout.php" >Logout</button> -->
           </ul>
           <li class="nav-item">
           
-          <button class="btn btn-danger" type="submit">Logout</button>
+          <button class="btn btn-danger" type="submit"><a href="db/logout.php">logut</a></button>
         </li>
         </li>
       </ul>
